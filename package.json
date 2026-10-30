@@ -1,0 +1,36 @@
+{
+  "name": "ss-enterprises",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SS Enterprises - home appliance repair, RO sales and spare parts, Ballia",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node --env-file=.env.local scripts/seed.mjs",
+    "seed:fresh": "node --env-file=.env.local scripts/seed.mjs --fresh",
+    "photos": "node --env-file=.env.local scripts/import-photos.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.10.0",
+    "lucide-react": "^0.460.0",
+    "mongoose": "^8.24.7",
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19"
+  }
+}
